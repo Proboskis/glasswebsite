@@ -16,12 +16,17 @@ export default function Home() {
           <div className="bg-orange-100"></div>
       </div>
     </div>*/
-      <main className="min-h-screen min-w-screen bg-no-repeat bg-cover bg-left flex justify-center"
-            style={{backgroundImage: `url(${bgImage.src})`}}>
-          <section className="bg-white mx-8 my-4 w-4/5 bg-opacity-60 bg-clip-padding"
+      <div className="min-h-screen min-w-screen bg-no-repeat bg-cover bg-fixed flex flex-col justify-start"
+           style={{backgroundImage: `url(${bgImage.src})`}}>
+          <nav className="bg-gray-100 w-screen m-0 h-16 bg-opacity-20 bg-clip-padding"
+               style={{backdropFilter: "blur(20px)"}}>
+          </nav>
+          <main className="bg-white w-screen h-64 bg-opacity-20 bg-clip-padding"
+                style={{backdropFilter: "blur(20px)"}}>
+          </main>
+          <section className="bg-white w-screen h-16 bg-opacity-20 bg-clip-padding"
                    style={{backdropFilter: "blur(20px)"}}>
-
           </section>
-      </main>
+      </div>
   );
 }
