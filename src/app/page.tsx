@@ -2,31 +2,15 @@ import bgImage from './background_glass.jpg';
 
 export default function Home() {
   return (
-    /*<div className="w-screen h-screen bg-gray-100">
-      <div className="px-20 py-10 grid grid-cols-3 gap-5 min-w-full min-h-full">
-          <div className="bg-orange-100"></div>
-          <div className="bg-orange-100"></div>
-          <div className="bg-orange-100"></div>
-          <div className="bg-orange-100"></div>
-          <div className="bg-orange-100"></div>
-          <div className="bg-orange-100"></div>
-          <div className="bg-orange-100"></div>
-          <div className="bg-orange-100"></div>
-          <div className="bg-orange-100"></div>
-          <div className="bg-orange-100"></div>
-      </div>
-    </div>*/
-      <div className="min-h-screen min-w-screen bg-no-repeat bg-cover bg-fixed flex flex-col justify-start"
-           style={{backgroundImage: `url(${bgImage.src})`}}>
-          <nav className="bg-gray-100 w-screen m-0 h-16 bg-opacity-20 bg-clip-padding"
-               style={{backdropFilter: "blur(20px)"}}>
-          </nav>
-          <main className="bg-white w-screen h-64 bg-opacity-20 bg-clip-padding"
-                style={{backdropFilter: "blur(20px)"}}>
-          </main>
-          <section className="bg-white w-screen h-16 bg-opacity-20 bg-clip-padding"
-                   style={{backdropFilter: "blur(20px)"}}>
-          </section>
+      <div className="min-h-screen min-w-screen bg-no-repeat bg-cover bg-fixed relative flex flex-col justify-start
+            overflow-hidden" style={{backgroundImage: `url(${bgImage.src})`}}>
+            <div className="min-h-screen flex justify-center items-center">
+                <h1 className="text-[160px] text-white font-bold tracking-wide">Staklo Design</h1>
+            </div>
+            <div className="min-h-screen w-2/3 top-0 left-[50%] absolute bg-gray-400 inline-block -skew-x-[26deg]
+                bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-l border-neutral-400 z-10">
+                &nbsp;
+            </div>
       </div>
   );
 }
