@@ -1,5 +1,5 @@
-import bgImage from './background_glass2.jpg';
-import Navbar from './Navbar';
+import bgImage from './assets/images/background_glass2.jpg';
+import Navbar from './components/Navbar';
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
                     <h1 className="text-9xl text-white font-thin tracking-wide">Staklo Design</h1>
                 </div>
                 <div className="flex-justify-center">
-                    <p className="text-white text-md font-thin text-center">vam nudi ogledala po meri, termopan staklo, kaljeno staklo za kuhinje, kao i obradu, bušenje, brušenje i peskiranje stakla.</p>
+                    <p className="text-white text-md font-thin text-center">Vam nudi ogledala po meri, termopan staklo, kaljeno staklo za kuhinje, kao i obradu, bušenje, brušenje i peskiranje stakla.</p>
                 </div>
             </div>
       </div>

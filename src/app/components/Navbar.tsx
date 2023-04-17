@@ -1,4 +1,4 @@
-import NavigationLink from "./NavigationLink";
+import NavigationLink from "../NavigationLink";
 
 export default function Navigation() {
     return (
@@ -14,7 +14,7 @@ export default function Navigation() {
                     <NavigationLink name={"ogledala"} href={'#'} />
                 </li>
                 <li>
-                    <NavigationLink name={"kontakt"} href={'#'} />
+                    <NavigationLink name={"kontakt"} href={'./contact'} />
                 </li>
             </ul>
         </div>
